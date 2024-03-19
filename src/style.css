@@ -1,0 +1,43 @@
+input[type="text"],input[type="date"],textarea,select{
+    border: none;
+    outline:none;
+    box-shadow: none;
+}
+.form-select:focus{
+    border:2px solid #C5CED6 !important;
+    box-shadow: none;
+}
+.search-container>div{
+    border:2px solid #6558f5;
+    height:40px;
+    border-radius: 5px;
+}
+/*
+ < 600 --> x-small
+ < 768 --> portrait tabs and large phones
+ < 992 --> landscape tabs
+ < 1200 --> laptops/desktops
+  >= 1200 --> large laptops/screens
+*/
+@media only screen and (max-width: 600px){
+    .header{
+        flex-direction: column;
+        gap:40px
+    }
+    .header > div{
+        place-content: center;
+    }
+    .movie-grid{
+        grid-template-columns: 1fr 1fr !important;
+    }
+}
+@media only screen and (min-width: 992px){
+    .movie-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr !important;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .movie-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr !important;
+    }
+}
