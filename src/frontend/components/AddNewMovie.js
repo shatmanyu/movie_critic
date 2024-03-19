@@ -1,10 +1,10 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
-import { setCreateMovieModal, setDeleteMovieId, setMovieDeleteModal, setMovieTobeUpdate, setMovieUpdateModal } from './frontend/store/movieSlice';
+import { setCreateMovieModal, setDeleteMovieId, setMovieDeleteModal, setMovieTobeUpdate, setMovieUpdateModal } from '../store/movieSlice';
 import {useDispatch, useSelector } from 'react-redux';
 import { useState } from 'react';
-import { supabase } from './backend/config';
+import { supabase } from '../../backend/config';
 function AddNewMovie() {
   const dispatch = useDispatch()
   const movieUpdate = useSelector((state)=>state?.movie?.movieUpdateModal)

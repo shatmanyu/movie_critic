@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { setAddReviewModal,setReviewDeleteModal,setDeleteReviewId,setReviewTobeUpdate,setReviewsListReducer,setReviewUpdateModal } from './frontend/store/reviewSlice'
+import { setAddReviewModal,setReviewDeleteModal,setDeleteReviewId,setReviewTobeUpdate,setReviewsListReducer,setReviewUpdateModal } from '../store/reviewSlice'
 export default function ReviewSection({review}) {
     const dispatch = useDispatch()
     function handleUpdateReview(e){

@@ -3,9 +3,9 @@ import MovieCard from './MovieCard'
 import './style.css';
 import { useDispatch,useSelector } from 'react-redux';
 import AddNewMovie from './AddNewMovie';
-import { supabase } from './backend/config';
+import { supabase } from '../../backend/config';
 import AddNewReview from './AddNewReview';
-import {setMoviesListReducer} from './frontend/store/movieSlice';
+import {setMoviesListReducer} from '../store/movieSlice';
 export default function Homepage() {
   const movieModal = useSelector((state)=>state?.movie?.createMovieModal)
   const reviewModal = useSelector((state)=>state?.review?.addReviewModal)

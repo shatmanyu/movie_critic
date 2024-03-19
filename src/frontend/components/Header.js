@@ -1,9 +1,9 @@
 import React from 'react'
 import { useNavigate } from 'react-router'
-import { setCreateMovieModal } from './frontend/store/movieSlice'
+import { setCreateMovieModal } from '../store/movieSlice'
 import { useDispatch,useSelector } from 'react-redux'
 import './style.css'
-import { setAddReviewModal } from './frontend/store/reviewSlice'
+import { setAddReviewModal } from '../store/reviewSlice'
 export default function Header() {
   const dispatch = useDispatch()
   const navigate = useNavigate()

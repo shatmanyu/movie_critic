@@ -3,9 +3,9 @@ import ReviewSection from './ReviewSection'
 import { useParams } from 'react-router'
 import { useDispatch, useSelector } from 'react-redux'
 import { useState } from 'react'
-import { setMoviesListReducer } from './frontend/store/movieSlice'
+import { setMoviesListReducer } from '../store/movieSlice'
 import AddNewMovie from './AddNewMovie'
-import { supabase } from './backend/config'
+import { supabase } from '../../backend/config'
 import AddNewReview from './AddNewReview'
 export default function ReviewPage() {
   const {movieId} = useParams()

@@ -1,12 +1,12 @@
 import Button from 'react-bootstrap/Button';
 import './style.css'
 import { useState } from 'react';
-import { supabase } from './backend/config';
+import { supabase } from '../../backend/config';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 import {useDispatch, useSelector } from 'react-redux';
-import { updateRating } from './utils';
-import { setAddReviewModal,setReviewDeleteModal,setDeleteReviewId,setReviewTobeUpdate,setReviewUpdateModal,setReviewsListReducer} from './frontend/store/reviewSlice';
+import { updateRating } from '../../utils';
+import { setAddReviewModal,setReviewDeleteModal,setDeleteReviewId,setReviewTobeUpdate,setReviewUpdateModal,setReviewsListReducer} from '../store/reviewSlice';
 function AddNewReview() {
   const dispatch = useDispatch()
   const reviewUpdate = useSelector((state)=>state?.review?.reviewUpdateModal)

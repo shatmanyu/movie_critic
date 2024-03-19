@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router';
-import { updateRating } from './utils';
-import { supabase } from './backend/config';
-import { setCreateMovieModal,setMovieUpdateModal,setMovieDeleteModal,setMovieTobeUpdate,setDeleteMovieId} from './frontend/store/movieSlice';
+import { updateRating } from '../../utils';
+import { supabase } from '../../backend/config';
+import { setCreateMovieModal,setMovieUpdateModal,setMovieDeleteModal,setMovieTobeUpdate,setDeleteMovieId} from '../store/movieSlice';
 export default function MovieCard({movie}) {
 
   const navigate = useNavigate()
